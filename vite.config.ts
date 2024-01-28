@@ -10,8 +10,8 @@ const manifestForPlugIn: Partial<VitePWAOptions> = {
     short_name:"week-shedule",
     description:"App for determining activity for the day of the week",
     icons:[{
-      src: '/android-chrome-192x192.png',
-      sizes:'192x192',
+      src: '/pwa/apple-icon-180.png',
+      sizes:'180x180',
       type:'image/png',
       purpose:'favicon'
     },
