@@ -16,19 +16,19 @@ const manifestForPlugIn: Partial<VitePWAOptions> = {
       purpose:'favicon'
     },
     {
-      src:'/android-chrome-512x512.png',
+      src: '/pwa/manifest-icon-512.maskable.png',
       sizes:'512x512',
       type:'image/png',
       purpose:'favicon'
     },
     {
-      src: '/apple-touch-icon.png',
+      src: '/pwa/apple-icon-180.png',
       sizes:'180x180',
       type:'image/png',
       purpose:'apple touch icon',
     },
     {
-      src: '/maskable_icon.png',
+      src: '/pwa/manifest-icon-512.maskable.png',
       sizes:'512x512',
       type:'image/png',
       purpose:'any maskable',
