@@ -1,0 +1,10 @@
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__activity-item:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
+}
