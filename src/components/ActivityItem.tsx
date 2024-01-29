@@ -1,4 +1,4 @@
-import { ChangeEvent, useState, useContext } from 'react';
+import { useState, useContext, useRef } from 'react';
 import { ActivityItemData } from '../typings/Activity';
 import { getDateString } from '../utils/dateFormat';
 import { MetaDataContext } from './MetaDataContext';
@@ -18,23 +18,18 @@ export function ActivityItem({
   onEdit,
 }: ActivityItemProps) {
   const [isEditing, setIsEditing] = useState(false);
-  const [editedText, setEditedText] = useState(content);
+  const inputRef = useRef<HTMLInputElement | null>(null);
   const ctx = useContext(MetaDataContext);
 
   function handleToggleEdit() {
     setIsEditing(!isEditing);
   }
 
-  function handleChange(e: ChangeEvent<HTMLInputElement>) {
-    const { target } = e;
-    const { value } = target;
-
-    setEditedText(value);
-  }
-
   function handleSave() {
+    if (!inputRef.current) return;
+
     const newItem = {
-      content: editedText,
+      content: inputRef.current.value,
       lastUpdate: getDateString(),
     };
 
@@ -58,9 +53,9 @@ export function ActivityItem({
         <input
           type="text"
           className="activity-item__input"
-          onChange={handleChange}
-          value={editedText}
+          defaultValue={content}
           maxLength={25}
+          ref={inputRef}
         />
         <button className="activity-item__save" onClick={handleSave}>
           <img src="/submit_white.svg" alt="submit" />
