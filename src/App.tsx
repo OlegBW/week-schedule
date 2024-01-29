@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { DaysBar } from './components/DaysBar';
 import { ActivitiesList } from './components/ActivitiesList';
-import { MetaDataContext } from './components/MetaDataContext';
+import { MetadataContext } from './components/MetadataContext';
 import { ActivitiesContext } from './components/ActivitiesContext';
 import { ActivityItemData } from './typings/Activity';
 import { useLocalForage } from './hooks/useLocalForage';
@@ -63,7 +63,7 @@ function App() {
   }
 
   return (
-    <MetaDataContext.Provider
+    <MetadataContext.Provider
       value={{
         lang,
         day,
@@ -81,7 +81,7 @@ function App() {
           <ActivitiesList />
         </div>
       </ActivitiesContext.Provider>
-    </MetaDataContext.Provider>
+    </MetadataContext.Provider>
   );
 }
 

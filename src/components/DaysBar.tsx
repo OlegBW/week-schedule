@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import { dayName } from '../data/daysData';
-import { MetaDataContext } from './MetaDataContext';
+import { MetadataContext } from './MetadataContext';
 import '../styles/DaysBar.scss';
 
 export function DaysBar() {
-  const ctx = useContext(MetaDataContext);
+  const ctx = useContext(MetadataContext);
 
   if (!ctx) return null;
 

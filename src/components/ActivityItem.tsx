@@ -1,7 +1,7 @@
 import { useState, useContext, useRef } from 'react';
 import { ActivityItemData } from '../typings/Activity';
 import { getDateString } from '../utils/dateFormat';
-import { MetaDataContext } from './MetaDataContext';
+import { MetadataContext } from './MetadataContext';
 import '../styles/ActivityItem.scss';
 
 interface ActivityItemProps {
@@ -19,7 +19,7 @@ export function ActivityItem({
 }: ActivityItemProps) {
   const [isEditing, setIsEditing] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
-  const ctx = useContext(MetaDataContext);
+  const ctx = useContext(MetadataContext);
 
   function handleToggleEdit() {
     setIsEditing(!isEditing);
