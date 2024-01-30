@@ -4,38 +4,38 @@ import { VitePWA, VitePWAOptions } from 'vite-plugin-pwa'
 
 const manifestForPlugIn: Partial<VitePWAOptions> = {
   registerType:'prompt',
-  includeAssets:['favicon.ico', "apple-touc-icon.png", "masked-icon.svg"],
   manifest:{
-    name:"week-shedule",
-    short_name:"week-shedule",
+    name:"Week Schedule",
+    short_name:"Week Schedule",
     description:"App for determining activity for the day of the week",
-    icons:[{
-      src: '/pwa/apple-icon-180.png',
-      sizes:'180x180',
-      type:'image/png',
-      purpose:'favicon'
+    icons:[
+    {
+        src: 'icon-180.png',
+        sizes:'180x180',
+        type:'image/png',
+        purpose:'any',
     },
     {
-      src: '/pwa/manifest-icon-512.maskable.png',
+      src: 'maskable-icon-512.png',
       sizes:'512x512',
       type:'image/png',
-      purpose:'favicon'
+      purpose:'any',
     },
     {
-      src: '/pwa/apple-icon-180.png',
+      src: 'icon-180.png',
       sizes:'180x180',
       type:'image/png',
-      purpose:'apple touch icon',
-    },
-    {
-      src: '/pwa/manifest-icon-512.maskable.png',
-      sizes:'512x512',
-      type:'image/png',
-      purpose:'any maskable',
-    }
+      purpose:'maskable',
+  },
+  {
+    src: 'maskable-icon-512.png',
+    sizes:'512x512',
+    type:'image/png',
+    purpose:'maskable',
+  },
   ],
   theme_color:'#171717',
-  background_color:'#f0e7db',
+  background_color:'#242424',
   display:"standalone",
   scope:'/',
   start_url:"/",

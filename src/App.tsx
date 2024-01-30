@@ -76,7 +76,7 @@ function App() {
           setData: handleEdit,
         }}
       >
-        <div>
+        <div className="app">
           <DaysBar />
           <ActivitiesList />
         </div>

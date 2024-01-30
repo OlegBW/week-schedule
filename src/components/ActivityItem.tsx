@@ -54,12 +54,10 @@ export function ActivityItem({
           type="text"
           className="activity-item__input"
           defaultValue={content}
-          maxLength={25}
+          maxLength={100}
           ref={inputRef}
         />
-        <button className="activity-item__save" onClick={handleSave}>
-          <img src="/submit_white.svg" alt="submit" />
-        </button>
+        <button className="activity-item__save" onClick={handleSave}></button>
       </div>
     );
   }

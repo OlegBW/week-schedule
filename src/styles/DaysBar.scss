@@ -7,9 +7,12 @@
   text-align: center;
   width: 2.5rem;
   height: 2.5rem;
+  user-select: none;
 
   background-color: inherit;
   border-radius: 100%;
+
+  font-weight: bold;
 
   &_0 {
     background-color: $sunday-primary;

@@ -16,12 +16,16 @@
   &__content {
     font-size: 1.25rem;
     align-self: flex-start;
+    width: 100%;
+    word-break: break-all;
+    text-align: start;
   }
 
   &__update {
     color: #c9c9c9;
     font-size: 0.75rem;
     align-self: flex-end;
+    user-select: none;
     // color: #dcdcdc
   }
 
@@ -34,9 +38,14 @@
     margin: 0px 0px 10px 0px;
   }
 
-  // &__save {
-  //   // height: 0.75rem;
-  // }
+  &__save {
+    height: 3rem;
+    width: 3.5rem;
+    background-image: url('/submit_white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
   &_0 {
     border: 2px dashed $sunday-primary;
