@@ -17,16 +17,16 @@
     font-size: 1.25rem;
     align-self: flex-start;
     width: 100%;
-    word-break: break-all;
+    overflow-wrap: anywhere;
     text-align: start;
+    margin: 0 0 5px 0;
   }
 
   &__update {
-    color: #c9c9c9;
+    color: #b5b5b5;
     font-size: 0.75rem;
     align-self: flex-end;
     user-select: none;
-    // color: #dcdcdc
   }
 
   &__input {
@@ -35,7 +35,7 @@
     outline: none;
     background: transparent;
     font-size: 1.25rem;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 15px 0px;
   }
 
   &__save {
