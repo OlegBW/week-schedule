@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# Week Schedule PWA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Week Schedule](/public/moon-readme.svg)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a progressive web application (PWA) designed for planning daily activities throughout the week. Each note provides a general description of the daily activity, the last update date, and a feature to focus on the current activity.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Weekly Planning:** A user-friendly interface for scheduling activities for each day of the week.
+- **General Notes:** Add general descriptions for each daily activity.
+- **Focus Highlight:** Highlight the current activity to enhance usability.
+- **Last Update Date:** Track the date of the last update for maintaining relevance.
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **Adding Activity:** Click on the respective day of the week to add or edit a note.
+2. **Focus on Activity:** Easily identify and focus on the current activity.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technical Requirements
+
+- A modern web browser that supports PWA technologies.
+
+## Installation with Vite
+
+1. Clone the repository: `git clone https://github.com/OlegBW/week-schedule.git`.
+2. Navigate to the project directory: `cd week-schedule`.
+3. Install dependencies: `npm install`.
+4. Start the application with Vite: `npm run dev`.
+
+## Update
+
+To receive updates, check the repository on GitHub and perform an update using `git pull`.
+
+## Contribution and Support
+
+If you have ideas or suggestions to enhance Week Schedule PWA, contributions are welcome. Open a new issue or submit a pull request on GitHub.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
